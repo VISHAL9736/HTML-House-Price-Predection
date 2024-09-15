@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url("{% static 'photo.jpg' %}");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white; /* You can change the text color based on your background image */
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 40px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* You can choose a color that suits your design */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to</h2>
+    <h1>House Price Prediction</h1>
+
+    <form action="predict">
+        <input type="submit" value="START">
+    </form>
+</body>
+</html>
